@@ -42,7 +42,8 @@ class _HomePageState extends State<HomePage> {
                         )
                       ),
                       onPressed: () {
-                        notificationBloc.add(NotificationEventsShowMessage(message: "salam" , type: "info"));
+                         
+                        notificationBloc.add(NotificationEventsShowMessage(message: "این یک پیام اطلاعاتی است" , type: "info"));
                       },
                       child: const Text("ورود"),
                     ),
@@ -57,7 +58,8 @@ class _HomePageState extends State<HomePage> {
                         )
                       ),
                       onPressed: () {
-                        notificationBloc.add(NotificationEventsShowMessage(message: "error" , type: "error"));
+                      
+                        notificationBloc.add(NotificationEventsShowMessage(message: "این یک پیام خطااست" , type: "error"));
                       },
                       child: const Text("ثبت نام"),
                     ),
