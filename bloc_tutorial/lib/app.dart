@@ -1,5 +1,4 @@
 import 'package:bloc_tutorial/bloc/notification_bloc/notification_bloc.dart';
-import 'package:bloc_tutorial/bloc/notification_bloc/notification_state.dart';
 import 'package:bloc_tutorial/home_page.dart';
 import 'package:bloc_tutorial/listeners/notification_bloc_listener.dart';
 import 'package:flutter/material.dart';
@@ -18,14 +17,15 @@ class App extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'My App',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const NotificationBlocListener(child: const HomePage(title: "برنامه من "),)
-      ),
+          debugShowCheckedModeBanner: false,
+          title: 'My App',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          home: const NotificationBlocListener(
+            child: const HomePage(title: "برنامه من "),
+          )),
     );
   }
 }
